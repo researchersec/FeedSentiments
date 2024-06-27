@@ -72,12 +72,17 @@ def generate_heatmap(df):
     
     logging.info("Generating heatmap...")
     coordinates = {
-        'Copenhagen': [55.6761, 12.5683],
-        'Aarhus': [56.1629, 10.2039],
-        'New York': [40.7128, -74.0060],
-        'California': [36.7783, -119.4179],
-        # Add more regions and their coordinates as needed
-    }
+    'Copenhagen': [55.6761, 12.5683],
+    'Aarhus': [56.1629, 10.2039],
+    'New York': [40.7128, -74.0060],
+    'California': [36.7783, -119.4179],
+    'Paris': [48.8566, 2.3522],
+    'Lyon': [45.7640, 4.8357],
+    'Berlin': [52.5200, 13.4050],
+    'Munich': [48.1351, 11.5820]
+    # Add more regions as needed
+}
+
     
     heat_data = []
     for _, row in df.iterrows():
