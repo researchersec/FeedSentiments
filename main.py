@@ -8,8 +8,7 @@ import folium
 from folium.plugins import HeatMap
 import logging
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_config(file_path):
     try:
@@ -76,7 +75,8 @@ def generate_heatmap(df):
         'Copenhagen': [55.6761, 12.5683],
         'Aarhus': [56.1629, 10.2039],
         'New York': [40.7128, -74.0060],
-        'California': [36.7783, -119.4179]
+        'California': [36.7783, -119.4179],
+        # Add more regions and their coordinates as needed
     }
     
     heat_data = []
@@ -84,6 +84,12 @@ def generate_heatmap(df):
         region_coords = coordinates.get(row['Region'])
         if region_coords:
             heat_data.append([region_coords[0], region_coords[1], row['Sentiment Polarity']])
+        else:
+            logging.warning(f"No coordinates found for region: {row['Region']}")
+    
+    if not heat_data:
+        logging.warning("No heat data to plot.")
+        return
     
     world_map = folium.Map(location=[20, 0], zoom_start=2)
     HeatMap(heat_data).add_to(world_map)
