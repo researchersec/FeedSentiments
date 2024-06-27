@@ -1,69 +1,41 @@
 {
     "Denmark": {
-        "National": [
-            "https://politiken.dk/rss",
-            "https://www.dr.dk/nyheder/service/feeds",
-            "https://www.berlingske.dk/rss/berlingske",
-            "https://jyllands-posten.dk/rss/",
-            "https://www.information.dk/service/rss",
-            "https://ekstrabladet.dk/rss2.xml",
-            "https://nyheder.tv2.dk/rss",
-            "https://borsen.dk/rss/",
-            "https://ing.dk/nyheder/rss",
-            "https://www.altinget.dk/rss"
+        "Copenhagen": [
+            "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+            "https://www.bt.dk/rss/nyheder"
+        ],
+        "Aarhus": [
+            "https://stiften.dk/rss"
         ]
     },
     "USA": {
-        "National": [
+        "New York": [
             "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-            "https://www.huffpost.com/section/front-page/feed",
-            "https://feeds.foxnews.com/foxnews/latest",
-            "https://rssfeeds.usatoday.com/usatoday-NewsTopStories",
-            "https://www.politico.com/rss/politics08.xml",
-            "https://www.yahoo.com/news/rss",
-            "https://www.npr.org/rss/rss.php?id=1001",
-            "https://www.latimes.com/rss2.0.xml"
-        ]
-    },
-    "UK": {
-        "National": [
-            "https://feeds.bbci.co.uk/news/rss.xml",
-            "https://www.theguardian.com/uk/rss",
-            "https://www.telegraph.co.uk/news/rss.xml",
-            "https://www.independent.co.uk/news/uk/rss",
-            "https://feeds.thetimes.co.uk/times/rss/news"
-        ]
-    },
-    "Australia": {
-        "National": [
-            "https://www.abc.net.au/news/feed/51120/rss.xml",
-            "https://www.smh.com.au/rss/feed.xml",
-            "https://www.theage.com.au/rss/feed.xml",
-            "https://www.news.com.au/feed"
-        ]
-    },
-    "Canada": {
-        "National": [
-            "https://www.cbc.ca/cmlink/rss-topstories",
-            "https://www.theglobeandmail.com/?service=rss",
-            "https://rss.canada.com/get/?F75",
-            "https://www.ctvnews.ca/rss/ctvnews-ca-top-stories-public-rss-1.822009"
-        ]
-    },
-    "Germany": {
-        "National": [
-            "https://www.spiegel.de/international/index.rss",
-            "https://www.dw.com/en/top-stories/s-9097",
-            "https://www.faz.net/rss/aktuell",
-            "https://www.sueddeutsche.de/news/rss"
+            "https://www.nbcnewyork.com/news/top-stories/feed/"
+        ],
+        "California": [
+            "https://www.latimes.com/local/rss2.0.xml",
+            "https://www.sfgate.com/bayarea/feed/Bay-Area-News-429.php"
         ]
     },
     "France": {
-        "National": [
+        "Paris": [
             "https://www.lemonde.fr/rss/en_continu.xml",
-            "https://www.france24.com/en/rss",
-            "https://www.lefigaro.fr/rss/figaro_actualites.xml",
-            "https://www.liberation.fr/rss/latest"
+            "https://www.france24.com/en/rss"
+        ],
+        "Lyon": [
+            "https://www.lyonmag.com/rss/rss.php",
+            "https://www.lyoncapitale.fr/feed/"
+        ]
+    },
+    "Germany": {
+        "Berlin": [
+            "https://www.dw.com/en/top-stories/s-9097",
+            "https://www.berliner-zeitung.de/feed/rss.xml"
+        ],
+        "Munich": [
+            "https://www.sueddeutsche.de/app/service/rss/alles/rss.xml",
+            "https://www.abendzeitung-muenchen.de/feed.rss"
         ]
     }
 }
